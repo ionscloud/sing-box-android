@@ -120,7 +120,7 @@
       "outbounds": [
         "Best Latency",
         "ATP_@VVIP",
-        "SDC_@VIP"
+        "SDC_@VVIP"
       ]
     },
     {
@@ -128,7 +128,7 @@
       "tag": "Best Latency",
       "outbounds": [
         "ATP_@VVIP",
-        "SDC_@VIP"
+        "SDC_@VVIP"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
