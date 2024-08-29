@@ -55,7 +55,7 @@
       {
         "domain_suffix": [
           "atp.sing-box.id",
-          "atp.sing-box.id"
+          "sdc.sing-box.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -119,22 +119,22 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "ions_@VVIP",
-        "ions_@VIP"
+        "ATP_@VVIP",
+        "SDC_@VIP"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "ions_@VVIP",
-        "ions_@VIP"
+        "ATP_@VVIP",
+        "SDC_@VIP"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "ions_@VVIP",
+      "tag": "ATP_@VVIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
@@ -166,11 +166,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "ions_@VIP",
+      "tag": "SDC_@VVIP",
       "type": "vmess",
-      "server": "quiz.int.vidio.com",
-      "server_port": 80,
-      "uuid": "3bb05ddd-ac7f-402f-8ad9-5fb110ca1da2",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "uuid": "45b47e48-dce7-4525-9bdc-0fa302d13cf5",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -180,11 +180,17 @@
         "protocol": "smux",
         "max_streams": 32
       },
+      "tls": {
+        "enabled": true,
+        "server_name": "quiz.vidio.com.sdc.sing-box.id",
+        "insecure": true,
+        "disable_sni": false
+      },
       "transport": {
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "quiz.int.vidio.com.atp.sing-box.id"
+          "Host": "quiz.vidio.com.sdc.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
