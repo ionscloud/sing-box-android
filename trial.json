@@ -54,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "as983.sing-box.id",
-          "as983.sing-box.id"
+          "sdc.sing-box.id",
+          "sdc.sing-box.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -136,9 +136,9 @@
     {
       "tag": "ions_@VVIP",
       "type": "vmess",
-      "server": "support.zoom.us",
+      "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "c343e8fa-edf9-4d45-8975-2cbbe463087a",
+      "uuid": "2158424a-4b15-48f3-a37b-812c22964f05",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -150,7 +150,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "support.zoom.us.as983.sing-box.id",
+        "server_name": "sdc.sing-box.id",
         "insecure": true,
         "disable_sni": false
       },
@@ -158,7 +158,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "support.zoom.us.as983.sing-box.id"
+          "Host": "sdc.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -168,9 +168,9 @@
     {
       "tag": "ions_@VIP",
       "type": "vmess",
-      "server": "support.zoom.us",
+      "server": "quiz.int.vidio.com",
       "server_port": 80,
-      "uuid": "c343e8fa-edf9-4d45-8975-2cbbe463087a",
+      "uuid": "2158424a-4b15-48f3-a37b-812c22964f05",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -184,7 +184,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "support.zoom.us.as983.sing-box.id"
+          "Host": "sdc.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
