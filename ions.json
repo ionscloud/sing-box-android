@@ -156,7 +156,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "quiz.vidio.com.atp.sing-box.id"
         },
@@ -188,7 +188,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "quiz.vidio.com.sdc.sing-box.id"
         },
