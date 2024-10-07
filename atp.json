@@ -136,9 +136,9 @@
     {
       "tag": "ATP_@VVIP",
       "type": "vmess",
-      "server": "app-stg.gopay.co.id",
+      "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "3bb05ddd-ac7f-402f-8ad9-5fb110ca1da2",
+      "uuid": "c6a1ca05-7d84-42fd-b9c3-29173ebf46e5",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -168,9 +168,9 @@
     {
       "tag": "ATP_@VIP",
       "type": "vmess",
-      "server": "app.gopay.co.id",
+      "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "3bb05ddd-ac7f-402f-8ad9-5fb110ca1da2",
+      "uuid": "c6a1ca05-7d84-42fd-b9c3-29173ebf46e5",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
