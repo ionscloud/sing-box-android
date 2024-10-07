@@ -54,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "id5.antonbrc.com",
-          "id5.antonbrc.com"
+          "atp.sing-box.id",
+          "sdc.sing-box.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -138,7 +138,7 @@
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "569b115e-7cf6-410d-bf3b-87ca4efe8d13",
+      "uuid": "c6a1ca05-7d84-42fd-b9c3-29173ebf46e5",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -150,7 +150,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "quiz.vidio.com",
+        "server_name": "quiz.vidio.com.atp.sing-box.id",
         "insecure": true,
         "disable_sni": false
       },
@@ -158,7 +158,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "quiz.vidio.com"
+          "Host": "quiz.vidio.com.atp.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -170,7 +170,7 @@
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "569b115e-7cf6-410d-bf3b-87ca4efe8d13",
+      "uuid": "45b47e48-dce7-4525-9bdc-0fa302d13cf5",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -182,7 +182,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "quiz.vidio.com",
+        "server_name": "quiz.vidio.com.sdc.sing-box.id",
         "insecure": true,
         "disable_sni": false
       },
@@ -190,7 +190,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "quiz.vidio.com"
+          "Host": "quiz.vidio.com.sdc.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
