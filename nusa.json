@@ -42,7 +42,7 @@
       },
       {
         "network": "udp",
-        "port": 443,
+        "port": 8443,
         "server": "block-dns",
         "rewrite_ttl": 20
       },
