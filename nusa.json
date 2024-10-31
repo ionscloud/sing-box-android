@@ -34,15 +34,15 @@
       },
       {
         "domain_suffix": [
-          "id1.antonbrc.com",
-          "id1.antonbrc.com"
+          "sdc.sing-box.id",
+          "sdc.sing-box.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
       },
       {
         "network": "udp",
-        "port": 8443,
+        "port": 443,
         "server": "block-dns",
         "rewrite_ttl": 20
       },
@@ -90,11 +90,11 @@
   ],
   "outbounds": [
     {
-      "tag": "ion01",
+      "tag": "SDC01",
       "type": "vmess",
-      "server": "quiz.vidio.com",
-      "server_port": 8443,
-      "uuid": "9da0ebdd-9127-4c06-a711-de9af3e78162",
+      "server": "www.udemy.com",
+      "server_port": 443,
+      "uuid": "45b47e48-dce7-4525-9bdc-0fa302d13cf5",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -106,15 +106,15 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "id1.antonbrc.com",
+        "server_name": "sdc.sing-box.id",
         "insecure": true,
         "disable_sni": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "id1.antonbrc.com"
+          "Host": "sdc.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -122,11 +122,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "ion02",
+      "tag": "SDC02",
       "type": "vmess",
-      "server": "quiz.vidio.com",
+      "server": "www.udemy.com",
       "server_port": 80,
-      "uuid": "9da0ebdd-9127-4c06-a711-de9af3e78162",
+      "uuid": "45b47e48-dce7-4525-9bdc-0fa302d13cf5",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -138,9 +138,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "id1.antonbrc.com"
+          "Host": "sdc.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -151,8 +151,8 @@
       "type": "urltest",
       "tag": "ions",
       "outbounds": [
-        "ion01",
-        "ion02"
+        "SDC01",
+        "SDC02"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "1m0s"
