@@ -34,8 +34,8 @@
       },
       {
         "domain_suffix": [
-          "sdc.sing-box.id",
-          "sdc.sing-box.id"
+          "atp.sing-box.id",
+          "atp.sing-box.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -90,11 +90,11 @@
   ],
   "outbounds": [
     {
-      "tag": "SDC01",
+      "tag": "ATP01",
       "type": "vmess",
-      "server": "www.udemy.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "45b47e48-dce7-4525-9bdc-0fa302d13cf5",
+      "uuid": "aae4a638-e807-46d9-b023-07f875bf66e6",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -114,7 +114,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "sdc.sing-box.id"
+          "Host": "atp.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -122,11 +122,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "SDC02",
+      "tag": "ATP02",
       "type": "vmess",
-      "server": "www.udemy.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
-      "uuid": "45b47e48-dce7-4525-9bdc-0fa302d13cf5",
+      "uuid": "aae4a638-e807-46d9-b023-07f875bf66e6",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -140,7 +140,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "sdc.sing-box.id"
+          "Host": "atp.sing-box.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -151,8 +151,8 @@
       "type": "urltest",
       "tag": "ions",
       "outbounds": [
-        "SDC01",
-        "SDC02"
+        "ATP01",
+        "ATP02"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "1m0s"
