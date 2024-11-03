@@ -106,7 +106,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "sdc.sing-box.id",
+        "server_name": "atp.sing-box.id",
         "insecure": true,
         "disable_sni": false
       },
