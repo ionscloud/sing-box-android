@@ -54,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "atp.sing-box.id",
-          "atp.sing-box.id"
+          "ions.zidstore.id",
+          "ions.zidstore.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -119,26 +119,26 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "ATP_@VVIP",
-        "ATP_@VIP"
+        "TIA_@VVIP",
+        "TIA_@VIP"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "ATP_@VVIP",
-        "ATP_@VIP"
+        "TIA_@VVIP",
+        "TIA_@VIP"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "ATP_@VVIP",
+      "tag": "TIA_@VVIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "aae4a638-e807-46d9-b023-07f875bf66e6",
+      "uuid": "831b45e2-214e-43e5-9aae-95df4889027e",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -150,15 +150,15 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "atp.sing-box.id",
+        "server_name": "ions.zidstore.id",
         "insecure": true,
         "disable_sni": false
       },
       "transport": {
         "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "path": "/whatever/vmess",
         "headers": {
-          "Host": "atp.sing-box.id"
+          "Host": "ions.zidstore.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -166,11 +166,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "ATP_@VIP",
+      "tag": "TIA_@VIP",
       "type": "vmess",
-      "server": "quiz.vidio.com",
+      "server": "quiz.int.vidio.com",
       "server_port": 443,
-      "uuid": "aae4a638-e807-46d9-b023-07f875bf66e6",
+      "uuid": "831b45e2-214e-43e5-9aae-95df4889027e",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -182,15 +182,15 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "atp.sing-box.id",
+        "server_name": "ions.zidstore.id",
         "insecure": true,
         "disable_sni": false
       },
       "transport": {
         "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "path": "/whatever/vmess",
         "headers": {
-          "Host": "atp.sing-box.id"
+          "Host": "ions.zidstore.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
