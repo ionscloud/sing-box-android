@@ -169,7 +169,7 @@
       "tag": "TIA_@VIP",
       "type": "vmess",
       "server": "quiz.int.vidio.com",
-      "server_port": 443,
+      "server_port": 80,
       "uuid": "831b45e2-214e-43e5-9aae-95df4889027e",
       "security": "auto",
       "alter_id": 0,
@@ -179,12 +179,6 @@
         "enabled": false,
         "protocol": "smux",
         "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ions.zidstore.id",
-        "insecure": true,
-        "disable_sni": false
       },
       "transport": {
         "type": "ws",
