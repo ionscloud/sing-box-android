@@ -1,16 +1,36 @@
 {
   "log": {
-    "disabled": true,
+    "disabled": false,
     "level": "warn",
     "timestamp": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    },
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "external_ui": "yacd",
+      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_detour": "Internet",
+      "secret": "",
+      "default_mode": "rule"
+    }
   },
   "dns": {
     "servers": [
       {
-        "tag": "ions-dns",
+        "tag": "Internet-dns",
         "address": "1.0.0.1",
         "strategy": "ipv4_only",
-        "detour": "ions"
+        "detour": "Internet"
+      },
+      {
+        "tag": "Best Latency-dns",
+        "address": "1.1.1.1",
+        "strategy": "ipv4_only",
+        "detour": "Best Latency"
       },
       {
         "tag": "direct-dns",
@@ -34,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "idcloud.zidstore.net",
-          "idcloud.zidstore.net"
+          "ions.zidstore.id",
+          "ions.zidstore.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -47,8 +67,13 @@
         "rewrite_ttl": 20
       },
       {
-        "outbound": "ions",
-        "server": "ions-dns",
+        "outbound": "Internet",
+        "server": "Internet-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "Best Latency",
+        "server": "Best Latency-dns",
         "rewrite_ttl": 20
       },
       {
@@ -90,11 +115,30 @@
   ],
   "outbounds": [
     {
-      "tag": "IDC💦",
+      "type": "selector",
+      "tag": "Internet",
+      "outbounds": [
+        "Best Latency",
+        "IONS_@VVIP",
+        "IONS_@VIP"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "Best Latency",
+      "outbounds": [
+        "IONS_@VVIP",
+        "IONS_@VIP"
+      ],
+      "url": "https://detectportal.firefox.com/success.txt",
+      "interval": "1m0s"
+    },
+    {
+      "tag": "IONS_@VVIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "1d810c06-63b8-4143-9659-6ac79f75ee28",
+      "uuid": "21db6067-6b8e-4e38-8a72-7a9d138b0d49",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -106,7 +150,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "idcloud.zidstore.net",
+        "server_name": "ions.zidstore.id",
         "insecure": true,
         "disable_sni": false
       },
@@ -114,7 +158,7 @@
         "type": "ws",
         "path": "/whatever/vmess",
         "headers": {
-          "Host": "idcloud.zidstore.net"
+          "Host": "ions.zidstore.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -122,11 +166,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "IDC🌊",
+      "tag": "IONS_@VIP",
       "type": "vmess",
-      "server": "quiz.vidio.com",
+      "server": "quiz.int.vidio.com",
       "server_port": 80,
-      "uuid": "1d810c06-63b8-4143-9659-6ac79f75ee28",
+      "uuid": "21db6067-6b8e-4e38-8a72-7a9d138b0d49",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -140,22 +184,12 @@
         "type": "ws",
         "path": "/whatever/vmess",
         "headers": {
-          "Host": "idcloud.zidstore.net"
+          "Host": "ions.zidstore.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "ipv4_only"
-    },
-    {
-      "type": "urltest",
-      "tag": "ions",
-      "outbounds": [
-        "IDC💦",
-        "IDC🌊"
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "1m0s"
     },
     {
       "type": "direct",
@@ -173,7 +207,15 @@
   "route": {
     "auto_detect_interface": true,
     "override_android_vpn": true,
-    "final": "ions",
+    "final": "Internet",
+    "geoip": {
+      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_detour": "Best Latency"
+    },
+    "geosite": {
+      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_detour": "Best Latency"
+    },
     "rules": [
       {
         "outbound": "dns-out",
@@ -183,4 +225,4 @@
       }
     ]
   }
-}
+      }
