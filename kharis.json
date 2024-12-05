@@ -34,7 +34,7 @@
       },
       {
         "domain_suffix": [
-          "as983.sing-box.id",
+          "ions.zidstore.net",
           "as983.sing-box.id"
         ],
         "server": "direct-dns",
@@ -94,7 +94,7 @@
       "type": "vmess",
       "server": "quiz.int.vidio.com",
       "server_port": 443,
-      "uuid": "83d06ef4-c6f9-48ca-8a9b-7d1ba094634a",
+      "uuid": "41e4b025-cf20-4d34-a90f-6f419b906a7b",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -106,15 +106,15 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "as983.sing-box.id",
+        "server_name": "ions.zidstore.net",
         "insecure": true,
         "disable_sni": false
       },
       "transport": {
         "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "path": "/vmess",
         "headers": {
-          "Host": "as983.sing-box.id"
+          "Host": "ions.zidstore.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
