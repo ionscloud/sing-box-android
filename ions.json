@@ -136,7 +136,7 @@
     {
       "tag": "IONS_@VVIP",
       "type": "vmess",
-      "server": "quiz.vidio.com",
+      "server": "zaintest.vuclip.com",
       "server_port": 443,
       "uuid": "21db6067-6b8e-4e38-8a72-7a9d138b0d49",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "IONS_@VIP",
       "type": "vmess",
-      "server": "quiz.int.vidio.com",
+      "server": "zaintest.vuclip.com",
       "server_port": 80,
       "uuid": "21db6067-6b8e-4e38-8a72-7a9d138b0d49",
       "security": "auto",
