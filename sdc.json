@@ -54,7 +54,7 @@
       },
       {
         "domain_suffix": [
-          "sdc.sing-box.id",
+          "ions.zidstore.net",
           "sdc.sing-box.id"
         ],
         "server": "direct-dns",
@@ -119,26 +119,26 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "ions_@VVIP",
-        "ions_@VIP"
+        "DEWI_@VVIP",
+        "DEWI_@VIP"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "ions_@VVIP",
-        "ions_@VIP"
+        "DEWI_@VVIP",
+        "DEWI_@VIP"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "ions_@VVIP",
+      "tag": "DEWI_@VVIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "45b47e48-dce7-4525-9bdc-0fa302d13cf5",
+      "uuid": "d589aac3-0d9a-4325-a2cd-064c88d1cf30",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -150,15 +150,15 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "quiz.vidio.com.sdc.sing-box.id",
+        "server_name": "quiz.vidio.com.ions.zidstore.net",
         "insecure": true,
         "disable_sni": false
       },
       "transport": {
         "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "path": "/vmess",
         "headers": {
-          "Host": "quiz.vidio.com.sdc.sing-box.id"
+          "Host": "quiz.vidio.com.ions.zidstore.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -166,7 +166,7 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "ions_@VIP",
+      "tag": "DEWI_@VIP",
       "type": "vmess",
       "server": "quiz.int.vidio.com",
       "server_port": 80,
