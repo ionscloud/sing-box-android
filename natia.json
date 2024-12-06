@@ -150,7 +150,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "zaintest.vuclip.com.ions.zidstore.net",
+        "server_name": "ions.zidstore.net",
         "insecure": true,
         "disable_sni": false
       },
@@ -158,7 +158,7 @@
         "type": "ws",
         "path": "/whatever/vmess",
         "headers": {
-          "Host": "zaintest.vuclip.com.ions.zidstore.net"
+          "Host": "ions.zidstore.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -184,7 +184,7 @@
         "type": "ws",
         "path": "/whatever/vmess",
         "headers": {
-          "Host": "zaintest.vuclip.com.ions.zidstore.net"
+          "Host": "ions.zidstore.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
