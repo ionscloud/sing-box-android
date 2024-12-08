@@ -134,36 +134,32 @@
       "interval": "1m0s"
     },
     {
-      "tag": "RIDWAN_@VVIP",
-      "type": "vmess",
+      "type": "RIDWAN_@VVIP",
+      "tag": "Vmess gRPC",
+      "domain_strategy": "ipv4_only",
       "server": "zaintest.vuclip.com",
       "server_port": 443,
       "uuid": "f9a08ad1-f59f-4d9f-b7fb-e4c2020a537b",
       "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
       "authenticated_length": true,
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "ions.zidstore.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
       },
       "transport": {
-        "type": "ws",
-        "path": "/whatever/vmess",
-        "headers": {
-          "Host": "ions.zidstore.net"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
+        "type": "grpc",
+        "service_name": "vmess-grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      }
     },
     {
       "tag": "RIDWAN_@VIP",
