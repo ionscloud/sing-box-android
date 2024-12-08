@@ -134,8 +134,8 @@
       "interval": "1m0s"
     },
     {
-      "type": "RIDWAN_@VVIP",
-      "tag": "Vmess gRPC",
+      "type": "vmess",
+      "tag": "RIDWAN_@VVIP",
       "domain_strategy": "ipv4_only",
       "server": "zaintest.vuclip.com",
       "server_port": 443,
