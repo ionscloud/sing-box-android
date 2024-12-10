@@ -166,7 +166,7 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "DIAH_@VIP",
+      "tag": "FITRI_@VIP",
       "type": "vmess",
       "server": "zaintest.vuclip.com",
       "server_port": 80,
