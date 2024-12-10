@@ -156,7 +156,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/whatever/vmess",
+        "path": "/vmess",
         "headers": {
           "Host": "ions-do.zidstore.id"
         },
@@ -182,7 +182,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/whatever/vmess",
+        "path": "/vmess",
         "headers": {
           "Host": "ions-do.zidstore.id"
         },
