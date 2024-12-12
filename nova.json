@@ -136,7 +136,7 @@
     {
       "tag": "NOVA_@VVIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "de02d251-7b94-4704-b557-04d4c4512d01",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "NOVA_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "de02d251-7b94-4704-b557-04d4c4512d01",
       "security": "auto",
