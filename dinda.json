@@ -136,7 +136,7 @@
     {
       "tag": "DINDA_@VVIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "495cea48-9755-4611-946b-b83654700bff",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "DINDA_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "495cea48-9755-4611-946b-b83654700bff",
       "security": "auto",
