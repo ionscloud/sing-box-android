@@ -54,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "ions.zidstore.net",
-          "ions.zidstore.net"
+          "ions.my.id",
+          "ions.my.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -144,7 +144,7 @@
       "authenticated_length": true,
       "tls": {
         "enabled": true,
-        "server_name": "ions.zidstore.net",
+        "server_name": "ions.my.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -180,7 +180,7 @@
         "type": "ws",
         "path": "/whatever/vmess",
         "headers": {
-          "Host": "ions.zidstore.net"
+          "Host": "ions.my.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
