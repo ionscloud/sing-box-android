@@ -54,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "ions.zidstore.net",
-          "ions.zidstore.net"
+          "ions.my.id",
+          "ions-do.zidstore.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -170,7 +170,7 @@
       "type": "vmess",
       "server": "zaintest.vuclip.com",
       "server_port": 80,
-      "uuid": "21db6067-6b8e-4e38-8a72-7a9d138b0d49",
+      "uuid": "4739d2d2-97eb-4c5a-9fe7-32b22c6bbc5a",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -182,9 +182,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/whatever/vmess",
+        "path": "/vmess",
         "headers": {
-          "Host": "ions.zidstore.net"
+          "Host": "ions-do.zidstore.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
