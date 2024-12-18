@@ -137,7 +137,7 @@
       "type": "vmess",
       "tag": "RIDWAN_@VVIP",
       "domain_strategy": "ipv4_only",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "f9a08ad1-f59f-4d9f-b7fb-e4c2020a537b",
       "security": "auto",
@@ -164,7 +164,7 @@
     {
       "tag": "RIDWAN_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "f9a08ad1-f59f-4d9f-b7fb-e4c2020a537b",
       "security": "auto",
@@ -178,7 +178,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/whatever/vmess",
+        "path": "/vmess",
         "headers": {
           "Host": "ions.my.id"
         },
