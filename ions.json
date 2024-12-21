@@ -119,22 +119,22 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "IONS_@VVIP",
-        "IONS_@VIP"
+        "CLOUD_@VVIP",
+        "OCEAN_@VIP"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "IONS_@VVIP",
-        "IONS_@VIP"
+        "CLOUD_@VVIP",
+        "OCEAN_@VIP"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "IONS_@VVIP",
+      "tag": "CLOUD_@VVIP",
       "type": "vmess",
       "server": "zaintest.vuclip.com",
       "server_port": 443,
@@ -166,7 +166,7 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "IONS_@VIP",
+      "tag": "OCEAN_@VIP",
       "type": "vmess",
       "server": "zaintest.vuclip.com",
       "server_port": 80,
