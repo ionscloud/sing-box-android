@@ -136,7 +136,7 @@
     {
       "tag": "ARUMI_@VVIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "15c4b8dd-ac95-456d-bef3-86dc238254c4",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "ARUMI_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "15c4b8dd-ac95-456d-bef3-86dc238254c4",
       "security": "auto",
