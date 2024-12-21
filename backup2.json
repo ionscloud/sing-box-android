@@ -136,7 +136,7 @@
     {
       "tag": "HOST_@VVIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "ionscloudpremiumserver",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "HOST_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "ionscloudpremiumserver",
       "security": "auto",
