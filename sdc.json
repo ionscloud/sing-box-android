@@ -136,7 +136,7 @@
     {
       "tag": "DEWI_@VVIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "d589aac3-0d9a-4325-a2cd-064c88d1cf30",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "DEWI_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "d589aac3-0d9a-4325-a2cd-064c88d1cf30",
       "security": "auto",
