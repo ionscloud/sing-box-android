@@ -136,7 +136,7 @@
     {
       "tag": "SURI_@VVIP",
       "type": "vmess",
-      "server": "104.17.2.81",
+      "server": "104.17.3.81",
       "server_port": 443,
       "uuid": "dd05afd2-0b6f-42ae-b591-6b6bc287c57e",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "SURI_@VIP",
       "type": "vmess",
-      "server": "104.17.2.81",
+      "server": "104.17.3.81",
       "server_port": 80,
       "uuid": "dd05afd2-0b6f-42ae-b591-6b6bc287c57e",
       "security": "auto",
