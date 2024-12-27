@@ -136,7 +136,7 @@
     {
       "tag": "CLOUD_@VVIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "ionscloudpremiumserver",
       "security": "auto",
@@ -156,7 +156,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/whatever/vmess",
+        "path": "/vmess",
         "headers": {
           "Host": "ions.my.id"
         },
@@ -168,7 +168,7 @@
     {
       "tag": "OCEAN_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "ionscloudpremiumserver",
       "security": "auto",
