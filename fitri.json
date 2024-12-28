@@ -136,7 +136,7 @@
     {
       "tag": "FITRI_@VVIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 443,
       "uuid": "fc50666e-4e87-428c-9abf-95e28d8ea7f7",
       "security": "auto",
@@ -168,7 +168,7 @@
     {
       "tag": "FITRI_@VIP",
       "type": "vmess",
-      "server": "zaintest.vuclip.com",
+      "server": "quiz.vidio.com",
       "server_port": 80,
       "uuid": "fc50666e-4e87-428c-9abf-95e28d8ea7f7",
       "security": "auto",
