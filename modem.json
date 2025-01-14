@@ -89,6 +89,7 @@
     }
   ],
   "outbounds": [
+     {
       "tag": "🇸🇬 HOST",
       "type": "vless",
       "server": "www.udemy.com",
