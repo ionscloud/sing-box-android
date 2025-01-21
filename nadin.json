@@ -54,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "ions-do.zidstore.id",
-          "ions-do.zidstore.id"
+          "idc.hariyono.my.id",
+          "idc.hariyono.my.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -138,7 +138,7 @@
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "a564a3eb-f305-46e0-966c-e84aeb4cebd5",
+      "uuid": "97a60d59-0d16-4263-bbc3-f0806340f6c3",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -150,7 +150,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "ions-do.zidstore.id",
+        "server_name": "idc.hariyono.my.id",
         "insecure": true,
         "disable_sni": false
       },
@@ -158,7 +158,7 @@
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "ions-do.zidstore.id"
+          "Host": "idc.hariyono.my.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -170,7 +170,7 @@
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 80,
-      "uuid": "a564a3eb-f305-46e0-966c-e84aeb4cebd5",
+      "uuid": "97a60d59-0d16-4263-bbc3-f0806340f6c3",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -184,7 +184,7 @@
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "ions-do.zidstore.id"
+          "Host": "idc.hariyono.my.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
