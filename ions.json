@@ -35,6 +35,7 @@
       {
         "domain_suffix": [
           "idc.hariyono.my.id",
+          "idc2.hariyono.my.id",
           "ions.my.id",
           "ions-do.zidstore.id"
         ],
@@ -117,6 +118,32 @@
       "domain_strategy": "ipv4_only"
     },
     {
+      "tag": "🇸🇬 IDC II",
+      "type": "vless",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "uuid": "vlesspremiumserver",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "idc2.hariyono.my.id",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "idc2.hariyono.my.id"
+        }
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
       "tag": "🇸🇬 HOST",
       "type": "vless",
       "server": "quiz.vidio.com",
@@ -173,6 +200,7 @@
       "tag": "internet",
       "outbounds": [
         "🇸🇬 IDC",
+        "🇸🇬 IDC II",
         "🇸🇬 HOST",
         "🇸🇬 OCEAN"
       ],
