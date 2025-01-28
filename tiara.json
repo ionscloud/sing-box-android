@@ -1,6 +1,6 @@
 {
   "log": {
-    "disabled": false,
+    "disabled": true,
     "level": "warn",
     "timestamp": true
   },
@@ -20,12 +20,6 @@
   },
   "dns": {
     "servers": [
-      {
-        "tag": "Internet-dns",
-        "address": "1.0.0.1",
-        "strategy": "ipv4_only",
-        "detour": "Internet"
-      },
       {
         "tag": "Best Latency-dns",
         "address": "1.1.1.1",
@@ -54,8 +48,8 @@
       },
       {
         "domain_suffix": [
-          "ions-do.zidstore.id",
-          "ions-do.zidstore.id"
+          "idc.hariyono.my.id",
+          "idc.hariyono.my.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -64,11 +58,6 @@
         "network": "udp",
         "port": 443,
         "server": "block-dns",
-        "rewrite_ttl": 20
-      },
-      {
-        "outbound": "Internet",
-        "server": "Internet-dns",
         "rewrite_ttl": 20
       },
       {
@@ -115,30 +104,21 @@
   ],
   "outbounds": [
     {
-      "type": "selector",
-      "tag": "Internet",
-      "outbounds": [
-        "Best Latency",
-        "TIARA_@VVIP",
-        "TIARA_@VIP"
-      ]
-    },
-    {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "TIARA_@VVIP",
-        "TIARA_@VIP"
+        "🇸🇬 VVIP",
+        "🇸🇬 VIP"
       ],
-      "url": "https://detectportal.firefox.com/success.txt",
+      "url": "http://www.gstatic.com/generate_204",
       "interval": "1m0s"
     },
     {
-      "tag": "TIARA_@VVIP",
+      "tag": "🇸🇬 VVIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "4f1a3e05-bd23-4868-ad3a-8b48d21da1a9",
+      "uuid": "7dee3867-dc0b-4f08-9817-b6abd7524e01",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -150,7 +130,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "ions-do.zidstore.id",
+        "server_name": "idc.hariyono.my.id",
         "insecure": true,
         "disable_sni": false
       },
@@ -158,7 +138,7 @@
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "ions-do.zidstore.id"
+          "Host": "idc.hariyono.my.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -166,11 +146,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "TIARA_@VIP",
+      "tag": "🇸🇬 VIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 80,
-      "uuid": "4f1a3e05-bd23-4868-ad3a-8b48d21da1a9",
+      "uuid": "7dee3867-dc0b-4f08-9817-b6abd7524e01",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -184,7 +164,7 @@
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "ions-do.zidstore.id"
+          "Host": "idc.hariyono.my.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -207,7 +187,7 @@
   "route": {
     "auto_detect_interface": true,
     "override_android_vpn": true,
-    "final": "Internet",
+    "final": "Best Latency",
     "geoip": {
       "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
       "download_detour": "Best Latency"
@@ -225,4 +205,4 @@
       }
     ]
   }
-}
+ }
