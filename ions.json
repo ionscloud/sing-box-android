@@ -34,9 +34,8 @@
       },
       {
         "domain_suffix": [
-          "idc.hariyono.my.id",
+          "hrz.hariyono.my.id",
           "idc2.hariyono.my.id",
-          "ions.my.id",
           "ions-do.zidstore.id"
         ],
         "server": "direct-dns",
@@ -92,7 +91,7 @@
   ],
   "outbounds": [
     {
-      "tag": "🇸🇬 IDC",
+      "tag": "🇮🇩 HRZ",
       "type": "vless",
       "server": "quiz.vidio.com",
       "server_port": 443,
@@ -100,7 +99,7 @@
       "flow": "",
       "tls": {
         "enabled": true,
-        "server_name": "idc.hariyono.my.id",
+        "server_name": "hrz.hariyono.my.id",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -112,13 +111,13 @@
         "type": "ws",
         "path": "/vless",
         "headers": {
-          "Host": "idc.hariyono.my.id"
+          "Host": "hrz.hariyono.my.id"
         }
       },
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "🇸🇬 IDC II",
+      "tag": "🇮🇩 IDC",
       "type": "vless",
       "server": "quiz.vidio.com",
       "server_port": 443,
@@ -139,32 +138,6 @@
         "path": "/vless",
         "headers": {
           "Host": "idc2.hariyono.my.id"
-        }
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "🇸🇬 HOST",
-      "type": "vless",
-      "server": "quiz.vidio.com",
-      "server_port": 443,
-      "uuid": "vlesspremiumserver",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "ions.my.id",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "ions.my.id"
         }
       },
       "domain_strategy": "ipv4_only"
@@ -199,9 +172,8 @@
       "type": "urltest",
       "tag": "internet",
       "outbounds": [
-        "🇸🇬 IDC",
-        "🇸🇬 IDC II",
-        "🇸🇬 HOST",
+        "🇮🇩 HRZ",
+        "🇮🇩 IDC",
         "🇸🇬 OCEAN"
       ],
       "url": "http://www.gstatic.com/generate_204",
