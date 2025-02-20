@@ -136,7 +136,7 @@
     {
       "tag": "🇮🇩 HERZA_VVIP",
       "type": "vless",
-      "server": "quiz.vidio.com",
+      "server": "www.udemy.com",
       "server_port": 443,
       "uuid": "vlesspremiumserver",
       "flow": "",
@@ -162,7 +162,7 @@
     {
       "tag": "🇮🇩 HERZA_VIP",
       "type": "vless",
-      "server": "quiz.vidio.com",
+      "server": "www.udemy.com",
       "server_port": 80,
       "uuid": "vlesspremiumserver",
       "flow": "",
