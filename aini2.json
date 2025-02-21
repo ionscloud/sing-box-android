@@ -1,6 +1,6 @@
 {
   "log": {
-    "disabled": true,
+    "disabled": false,
     "level": "warn",
     "timestamp": true
   },
@@ -138,7 +138,7 @@
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "6b13e867-4d49-47f2-805e-930461f25489",
+      "uuid": "0f454cc2-d2e5-4ce5-8658-a83a30f937ab",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -170,7 +170,7 @@
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 80,
-      "uuid": "6b13e867-4d49-47f2-805e-930461f25489",
+      "uuid": "0f454cc2-d2e5-4ce5-8658-a83a30f937ab",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
