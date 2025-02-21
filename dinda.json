@@ -22,9 +22,15 @@
     "servers": [
       {
         "tag": "Internet-dns",
-        "address": "1.1.1.1",
+        "address": "1.0.0.1",
         "strategy": "ipv4_only",
         "detour": "Internet"
+      },
+      {
+        "tag": "Best Latency-dns",
+        "address": "1.1.1.1",
+        "strategy": "ipv4_only",
+        "detour": "Best Latency"
       },
       {
         "tag": "direct-dns",
@@ -66,6 +72,11 @@
         "rewrite_ttl": 20
       },
       {
+        "outbound": "Best Latency",
+        "server": "Best Latency-dns",
+        "rewrite_ttl": 20
+      },
+      {
         "outbound": "direct",
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -104,21 +115,30 @@
   ],
   "outbounds": [
     {
-      "type": "urltest",
+      "type": "selector",
       "tag": "Internet",
       "outbounds": [
-        "🇮🇩HERZA",
-        "HERZA🇮🇩"
+        "Best Latency",
+        "DINDA_@VVIP",
+        "DINDA_@VIP"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "Best Latency",
+      "outbounds": [
+        "DINDA_@VVIP",
+        "DINDA_@VIP"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "🇮🇩HERZA",
+      "tag": "DINDA_@VVIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "c9368e60-65a1-4af9-938a-cbb7322c0d5c",
+      "uuid": "5cae1726-8b77-4e0d-8ff3-930dcb7694b8",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -146,11 +166,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "HERZA🇮🇩",
+      "tag": "DINDA_@VIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 80,
-      "uuid": "c9368e60-65a1-4af9-938a-cbb7322c0d5c",
+      "uuid": "5cae1726-8b77-4e0d-8ff3-930dcb7694b8",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -190,11 +210,11 @@
     "final": "Internet",
     "geoip": {
       "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
-      "download_detour": "Internet"
+      "download_detour": "Best Latency"
     },
     "geosite": {
       "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
-      "download_detour": "Internet"
+      "download_detour": "Best Latency"
     },
     "rules": [
       {
