@@ -54,7 +54,7 @@
       },
       {
         "domain_suffix": [
-          "hrz.hariyono.my.id",
+          "ikd.hariyono.my.id",
           "hrz.hariyono.my.id"
         ],
         "server": "direct-dns",
@@ -119,7 +119,7 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "🇮🇩 HERZA_VVIP",
+        "🇮🇩 IKADA_VVIP",
         "🇮🇩 HERZA_VIP"
       ]
     },
@@ -127,52 +127,73 @@
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "🇮🇩 HERZA_VVIP",
+        "🇮🇩 IKADA_VVIP",
         "🇮🇩 HERZA_VIP"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "🇮🇩 HERZA_VVIP",
-      "type": "vless",
+      "tag": "🇮🇩 IKADA_VVIP",
+      "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "vlesspremiumserver",
-      "flow": "",
+      "uuid": "d5fcf63a-3839-4e11-9018-29bd0ee09484",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "hrz.hariyono.my.id",
+        "server_name": "ikd.hariyono.my.id",
         "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "disable_sni": false
       },
-      "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/vmess",
         "headers": {
-          "Host": "hrz.hariyono.my.id"
-        }
+          "Host": "ikd.hariyono.my.id"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "ipv4_only"
     },
     {
       "tag": "🇮🇩 HERZA_VIP",
-      "type": "vless",
+      "type": "vmess",
       "server": "quiz.vidio.com",
-      "server_port": 80,
-      "uuid": "vlesspremiumserver",
-      "flow": "",
-      "packet_encoding": "xudp",
+      "server_port": 443,
+      "uuid": "d891b687-29f3-4be4-9fc6-d7a9a14927d8",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "hrz.hariyono.my.id",
+        "insecure": true,
+        "disable_sni": false
+      },      
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/vmess",
         "headers": {
           "Host": "hrz.hariyono.my.id"
-        }
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "ipv4_only"
     },
