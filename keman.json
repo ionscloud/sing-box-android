@@ -48,8 +48,8 @@
       },
       {
         "domain_suffix": [
-          "hrz.hariyono.my.id",
-          "hrz.hariyono.my.id"
+          "ikd.hariyono.my.id",
+          "ikd.hariyono.my.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
