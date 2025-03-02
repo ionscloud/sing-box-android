@@ -21,6 +21,12 @@
   "dns": {
     "servers": [
       {
+        "tag": "Internet-dns",
+        "address": "1.0.0.1",
+        "strategy": "ipv4_only",
+        "detour": "Internet"
+      },
+      {
         "tag": "Best Latency-dns",
         "address": "1.1.1.1",
         "strategy": "ipv4_only",
@@ -48,8 +54,8 @@
       },
       {
         "domain_suffix": [
-          "hrz.hariyono.my.id",
-          "hrz.hariyono.my.id"
+          "ikd.hariyono.my.id",
+          "ikd.hariyono.my.id"
         ],
         "server": "direct-dns",
         "rewrite_ttl": 20
@@ -58,6 +64,11 @@
         "network": "udp",
         "port": 443,
         "server": "block-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "Internet",
+        "server": "Internet-dns",
         "rewrite_ttl": 20
       },
       {
@@ -104,21 +115,30 @@
   ],
   "outbounds": [
     {
+      "type": "selector",
+      "tag": "Internet",
+      "outbounds": [
+        "Best Latency",
+        "🇮🇩 IKADA_VVIP",
+        "🇮🇩 IKADA_VIP"
+      ]
+    },
+    {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "🇸🇬 VVIP",
-        "🇸🇬 VIP"
+        "🇮🇩 IKADA_VVIP",
+        "🇮🇩 IKADA_VIP"
       ],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "🇸🇬 VVIP",
+      "tag": "🇮🇩 IKADA_VVIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "7bab79b4-8a01-4ab3-ac9b-419d160c2d0b",
+      "uuid": "11f320dd-1566-4c68-a4d0-cefaa23ed1ce",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -130,7 +150,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "hrz.hariyono.my.id",
+        "server_name": "ikd.hariyono.my.id",
         "insecure": true,
         "disable_sni": false
       },
@@ -138,7 +158,7 @@
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "hrz.hariyono.my.id"
+          "Host": "ikd.hariyono.my.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -146,11 +166,11 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "🇸🇬 VIP",
+      "tag": "🇮🇩 IKADA_VIP",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 80,
-      "uuid": "7bab79b4-8a01-4ab3-ac9b-419d160c2d0b",
+      "uuid": "11f320dd-1566-4c68-a4d0-cefaa23ed1ce",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -164,7 +184,7 @@
         "type": "ws",
         "path": "/vmess",
         "headers": {
-          "Host": "hrz.hariyono.my.id"
+          "Host": "ikd.hariyono.my.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -187,7 +207,7 @@
   "route": {
     "auto_detect_interface": true,
     "override_android_vpn": true,
-    "final": "Best Latency",
+    "final": "Internet",
     "geoip": {
       "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
       "download_detour": "Best Latency"
@@ -205,4 +225,4 @@
       }
     ]
   }
- }
+}
