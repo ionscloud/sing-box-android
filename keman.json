@@ -107,67 +107,37 @@
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "🇸🇬 VVIP",
-        "🇸🇬 VIP"
+        "🍌🍌🍌"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "1m0s"
     },
     {
-      "tag": "🇸🇬 VVIP",
-      "type": "vmess",
+      "tag": "🍌🍌🍌",
+      "type": "trojan",
       "server": "quiz.vidio.com",
       "server_port": 443,
-      "uuid": "b0dafce4-aded-44e9-a90f-c476f4ad4c93",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
+      "password": "8ab0ecca-337f-454f-a434-5a7aed92d9b2",
       "tls": {
         "enabled": true,
-        "server_name": "hrz.hariyono.my.id",
+        "server_name": "ikd.hariyono.my.id",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/vmess",
+        "path": "/trojan-ws",
         "headers": {
-          "Host": "hrz.hariyono.my.id"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+          "Host": "ikd.hariyono.my.id"
+        }
       },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "🇸🇬 VIP",
-      "type": "vmess",
-      "server": "quiz.vidio.com",
-      "server_port": 80,
-      "uuid": "b0dafce4-aded-44e9-a90f-c476f4ad4c93",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
       "multiplex": {
         "enabled": false,
         "protocol": "smux",
         "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vmess",
-        "headers": {
-          "Host": "hrz.hariyono.my.id"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "ipv4_only"
     },
