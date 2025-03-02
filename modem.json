@@ -1,6 +1,6 @@
 {
   "log": {
-    "disabled": true,
+    "disabled": false,
     "level": "warn",
     "timestamp": true
   },
@@ -54,6 +54,10 @@
       },
       {
         "domain_suffix": [
+          "ikd.hariyono.my.id",
+          "hrz.hariyono.my.id",
+          "ikd.hariyono.my.id",
+          "hrz.hariyono.my.id",
           "ikd.hariyono.my.id",
           "hrz.hariyono.my.id"
         ],
@@ -119,22 +123,88 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "🇮🇩 IKADA_VVIP",
-        "🇮🇩 HERZA_VIP"
+        "🍌🍌🍌",
+        "🌽🌽🌽",
+        "🍊🍊🍊",
+        "🍅🍅🍅",
+        "🍏🍏🍏",
+        "🥕🥕🥕"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "🇮🇩 IKADA_VVIP",
-        "🇮🇩 HERZA_VIP"
+        "🍌🍌🍌",
+        "🌽🌽🌽",
+        "🍊🍊🍊",
+        "🍅🍅🍅",
+        "🍏🍏🍏",
+        "🥕🥕🥕"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "🇮🇩 IKADA_VVIP",
+      "tag": "🍌🍌🍌",
+      "type": "trojan",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "password": "75ccfee5-5fc2-48cd-830a-c29321ef5cba",
+      "tls": {
+        "enabled": true,
+        "server_name": "ikd.hariyono.my.id",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trojan-ws",
+        "headers": {
+          "Host": "ikd.hariyono.my.id"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "🌽🌽🌽",
+      "type": "trojan",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "password": "84243c28-7791-4a6d-8e03-ce918576fdd4",
+      "tls": {
+        "enabled": true,
+        "server_name": "hrz.hariyono.my.id",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trojan-ws",
+        "headers": {
+          "Host": "hrz.hariyono.my.id"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "🍊🍊🍊",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
@@ -166,7 +236,7 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "🇮🇩 HERZA_VIP",
+      "tag": "🍅🍅🍅",
       "type": "vmess",
       "server": "quiz.vidio.com",
       "server_port": 443,
@@ -185,7 +255,7 @@
         "server_name": "hrz.hariyono.my.id",
         "insecure": true,
         "disable_sni": false
-      },      
+      },
       "transport": {
         "type": "ws",
         "path": "/vmess",
@@ -194,6 +264,58 @@
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "🍏🍏🍏",
+      "type": "vless",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "uuid": "f8ccbd94-4bfa-400c-b947-a83b9cdf01e7",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "ikd.hariyono.my.id",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "ikd.hariyono.my.id"
+        }
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "🥕🥕🥕",
+      "type": "vless",
+      "server": "quiz.vidio.com",
+      "server_port": 443,
+      "uuid": "af098824-d31e-4aa6-b50b-8444015c3b1f",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "hrz.hariyono.my.id",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "hrz.hariyono.my.id"
+        }
       },
       "domain_strategy": "ipv4_only"
     },
